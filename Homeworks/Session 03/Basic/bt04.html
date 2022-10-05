@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    .grid.wide {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 80px;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .course-item {
+        padding: 20px 20px 20px 20px;
+        box-shadow: 5px 5px 1px 3px #ccc;
+        border: 1px solid #ccc;
+    }
+    
+    h1 {
+        color: orange;
+        padding-top: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .grid {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .heading {
+        text-align: center;
+    }
+    
+    .heading img {
+        width: 100%;
+        height: 230px;
+    }
+    
+    .if {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 20px;
+        border-bottom: 1px dashed #ccc;
+    }
+    
+    .contact {
+        padding-top: 16px;
+    }
+    
+    .contact .email {
+        padding: 1px 0px 1px 20px;
+        color: #fff;
+        box-shadow: 5px 5px 1px 2px rgb(231, 230, 230);
+    }
+    
+    .contact .phone {
+        padding: 1px 10px 1px 20px;
+        margin-top: 16px;
+        color: #fff;
+        box-shadow: 5px 5px 1px 2px rgb(231, 230, 230);
+    }
+    
+    .contact span {
+        padding-left: 5px;
+    }
+    
+    .bg-red {
+        background-color: rgb(247, 83, 82);
+    }
+    
+    .bg-green {
+        background-color: rgb(81, 213, 103);
+    }
+    
+    .bg-bluelight {
+        background-color: rgb(49, 200, 221);
+    }
+    
+    .bg-blue {
+        background-color: rgb(97, 156, 236);
+    }
+    
+    .bg-orange {
+        background-color: rgb(247, 129, 83);
+    }
+    
+    .bg-yellow {
+        background-color: rgb(252, 213, 24);
+    }
+    
+    .bg-pinklight {
+        background-color: rgb(203, 121, 231);
+    }
+    
+    .bg-pink {
+        background-color: rgb(254, 96, 232)
+    }
+</style>
+
+<body>
+    <div class="grid wide">
+        <div class="row">
+            <!-- user1 -->
+            <div class="col l-3">
+                <div class="course-item">
+                    <div class="heading">
+                        <img src="https://i.guim.co.uk/img/media/db6e3950a1ac824fba4bdc350f9320bbed1c4f5a/177_1486_5209_3125/master/5209.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=20162ad62703cef90eb7891287d5e783" alt="">
+                        <h1>YoungKin</h1>
+                        <P>FrontEnd</P>
+                    </div>
+
+                    <!-- row 1 -->
+                    <div class="card-body">
+                        <div class="if">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span style="padding-left: 10px ;">DBO</span>
+                            <span style="padding-left: 110px;">23/05/2014</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-heart"></i>
+                            <span style="padding-left: 10px ;">BG</span>
+                            <span class="mb-0" style="padding-left: 175px;">B+</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span style="padding-left: 10px ;">EDU</span>
+                            <span class="mb-0" style="padding-left: 145px;">MCA</span>
+                        </div>
+                        </li>
+                        <div class="if">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <span style="padding-left: 10px ;">RES</span>
+                            <span class="mb-0" style="padding-left: 128px;">Bangalore</span>
+                        </div>
+                    </div>
+
+                    <div class="contact ">
+                        <div class="email bg-red ">
+                            <h4>EMAIL ID</h4>
+                            <p>
+                                <i class="fa-regular fa-envelope "></i>
+                                <span>tkin2709@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="phone bg-green ">
+                            <h4>PHONE NO</h4>
+                            <p>
+                                <i class="fa-solid fa-phone "></i>
+                                <span>0346335155</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- user 2 -->
+            <div class="col l-3">
+                <div class="course-item">
+                    <div class="heading">
+                        <img src="https://media.pitchfork.com/photos/60df879d316238f6226d2605/1:1/w_900,h_900,c_limit/TylerTheCreator_GettyImages-1325814253.jpg" alt="">
+                        <h1>YoungKin</h1>
+                        <P>FrontEnd</P>
+                    </div>
+
+                    <!-- row 2 -->
+                    <div class="card-body ">
+                        <div class="if">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span style="padding-left: 10px ;">DBO</span>
+                            <span style="padding-left: 110px;">23/05/2014</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-heart"></i>
+                            <span style="padding-left: 10px ;">BG</span>
+                            <span class="mb-0" style="padding-left: 175px;">B+</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span style="padding-left: 10px ;">EDU</span>
+                            <span class="mb-0" style="padding-left: 145px;">MCA</span>
+                        </div>
+                        </li>
+                        <div class="if">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <span style="padding-left: 10px ;">RES</span>
+                            <span class="mb-0" style="padding-left: 128px;">Bangalore</span>
+                        </div>
+                    </div>
+
+                    <div class="contact ">
+                        <div class="email bg-bluelight ">
+                            <h4>EMAIL ID</h4>
+                            <p>
+                                <i class="fa-regular fa-envelope "></i>
+                                <span>tkin2709@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="phone bg-blue ">
+                            <h4>PHONE NO</h4>
+                            <p>
+                                <i class="fa-solid fa-phone "></i>
+                                <span>0346335155</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 3 -->
+            <div class="col l-3 ">
+                <div class="course-item ">
+                    <div class="heading">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tyler%2C_The_Creator_%288048745695%29_%28cropped%29.jpg/800px-Tyler%2C_The_Creator_%288048745695%29_%28cropped%29.jpg" alt=" ">
+                        <h1>YoungKin</h1>
+                        <P>FrontEnd</P>
+                    </div>
+
+                    <!-- row 3 -->
+                    <div class="card-body ">
+                        <div class="if">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span style="padding-left: 10px ;">DBO</span>
+                            <span style="padding-left: 110px;">23/05/2014</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-heart"></i>
+                            <span style="padding-left: 10px ;">BG</span>
+                            <span class="mb-0" style="padding-left: 175px;">B+</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span style="padding-left: 10px ;">EDU</span>
+                            <span class="mb-0" style="padding-left: 145px;">MCA</span>
+                        </div>
+                        </li>
+                        <div class="if">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <span style="padding-left: 10px ;">RES</span>
+                            <span class="mb-0" style="padding-left: 128px;">Bangalore</span>
+                        </div>
+                    </div>
+
+                    <div class="contact ">
+                        <div class="email bg-orange ">
+                            <h4>EMAIL ID</h4>
+                            <p>
+                                <i class="fa-regular fa-envelope "></i>
+                                <span>tkin2709@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="phone bg-yellow ">
+                            <h4>PHONE NO</h4>
+                            <p>
+                                <i class="fa-solid fa-phone "></i>
+                                <span>0346335155</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- user 4 -->
+            <div class="col l-3 ">
+                <div class="course-item ">
+                    <div class="heading">
+                        <img src=https://www.rollingstone.com/wp-content/uploads/2019/05/TylerTheCreator_SamRock.jpg " alt=" ">
+                        <h1>YoungKin</h1>
+                        <P>FrontEnd</P>
+                    <!-- row4 -->
+                    <div class="card-body ">
+                        <div class="if">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span style="padding-left: 10px ;">DBO</span>
+                            <span style="padding-left: 110px;">23/05/2014</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-heart"></i>
+                            <span style="padding-left: 10px ;">BG</span>
+                            <span class="mb-0" style="padding-left: 175px;">B+</span>
+                        </div>
+                        <div class="if">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span style="padding-left: 10px ;">EDU</span>
+                            <span class="mb-0" style="padding-left: 145px;">MCA</span>
+                        </div>
+                        </li>
+                        <div class="if">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <span style="padding-left: 10px ;">RES</span>
+                            <span class="mb-0" style="padding-left: 128px;">Bangalore</span>
+                        </div>
+                    </div>
+
+                    <div class="contact ">
+                        <div class="email bg-pinklight ">
+                            <h4>EMAIL ID</h4>
+                            <p>
+                                <i class="fa-regular fa-envelope "></i>
+                                <span>tkin2709@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="phone bg-pink ">
+                            <h4>PHONE NO</h4>
+                            <p>
+                                <i class="fa-solid fa-phone "></i>
+                                <span>0346335155</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/874851fd28.js " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+
+</html>
