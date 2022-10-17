@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .mid {
+      padding-top: 100px;
+      margin-left: 550px;
+    }
+  </style>
+  <body>
+    <div class="mid">
+      <form onsubmit="return false">
+        <label for="">Nhập chữ bất kỳ</label><br />
+        <input type="text" id="input__text" /> <br />
+
+        <button type="submit" id="btn__submit" onclick="handleSubmit()">
+          click
+        </button>
+      </form>
+    </div>
+    <script>
+      function handleSubmit(str) {
+        
+       let letters = str.split('')
+       let newArray = []
+       for(let letter of letters) {
+        if (letter == letter.toUpperCase()) {
+            newArray.push(letter.toLowerCase())
+        } else {
+            newArray.push(letter.toUpperCase())
+
+        }
+       }
+       return newArray.join('')
+      }
+      let output = handleSubmit('Trần Duy Phụng')
+      console.log(output)
+    </script>
+  </body>
+</html>

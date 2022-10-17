@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .mid {
+      padding-top: 100px;
+      margin-left: 550px;
+    }
+  </style>
+  <body>
+    <div class="mid">
+      <form onsubmit="return false">
+        <label for="">Nhập vào số bất kỳ</label><br />
+        <input type="text" id="ixtA" /> <br />
+        <input type="text" id="ixtB" /> <br />
+
+        <button type="submit" id="btn__submit" onclick="handleSubmit()">
+          click
+        </button>
+      </form>
+    </div>
+    <script>
+       function handleSubmit(){
+      let isA = document.getElementById("ixtA").value;
+      let isB = document.getElementById("ixtB").value;
+      while (isA != isB) {
+        if (isA > isB) {
+            isA = isA - isB;
+            
+        } else {
+            isB = isB - isA;
+        }
+       
+       }
+       alert(isA)
+    }
+    </script>
+  </body>
+</html>
